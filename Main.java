@@ -1,15 +1,15 @@
 public class Main {
     public static void main(String[] args) {
         // Criação das contas
-        ContaBancaria c1 = new ContaBancaria(1001, "Ana Silva", 500.0);
+        ContaBancaria c1 = new ContaBancaria(1001, "Alice Silva", 500.0);
         ContaBancaria c2 = new ContaBancaria(1002, "João Pereira", 1000.0);
 
         // Teste na conta 1
         System.out.printf("Saldo inicial (c1): R$ %.2f%n", c1.getSaldo());
-        c1.depositar(150.0);
-        System.out.printf("Após depósito de R$ 150,00 (c1): R$ %.2f%n", c1.getSaldo());
-        boolean okSacarC1 = c1.sacar(700.0);
-        System.out.printf("Tentativa de saque de R$ 700,00 (c1): %s%n", okSacarC1 ? "sucesso" : "falha");
+        c1.depositar(350.0);
+        System.out.printf("Após depósito de R$ 350,00 (c1): R$ %.2f%n", c1.getSaldo());
+        boolean okSacarC1 = c1.sacar(900.0);
+        System.out.printf("Tentativa de saque de R$ 900,00 (c1): %s%n", okSacarC1 ? "sucesso" : "falha");
         System.out.printf("Saldo final (c1): R$ %.2f%n", c1.getSaldo());
 
         System.out.println(); // Linha em branco para separar os testes
